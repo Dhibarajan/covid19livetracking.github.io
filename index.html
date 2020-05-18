@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>COVID Tracker</title>
-
+	<link rel="icon" href="img/tag.png" type="image/icon type">
 	<link rel="shortcut icon" href="corona.jpeg">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -19,19 +19,13 @@
 		.navbar{
 			font-size: 20px;
 		}
-
-		.blinking{
-    		animation:blinkingText 1.2s infinite;
-		}
-		@keyframes blinkingText{
-			0%{     color:blue;    }
-			49%{    color: blue; }
-			60%{    color: transparent; }
-			99%{    color:transparent;  }
-			100%{   color:blue;    }
-		}
-
 	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Most of the peoples are affected by dangeres Covid-19 virus this application Track the current impact of the coronavirus pandemic and its spread throughout the world.">
+	<meta name="author" content="Dhibarajan.RR">
+	<meta name="keywords" content="COVID-19,Corona virus,CoV,Corona,SARS,MERS,corona pathology,corona update,COVID-19 update,corona virus epidemiology,COVID-19 diagnosis,novel corona virus,SARS-COV2,corona virus pathology,corona virus 2019">
+
 	<script data-ad-client="ca-pub-4133274753218471" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body oncontextmenu="return false;">
@@ -64,7 +58,7 @@
 		<h1><u>Corona Live Tracking Globally</u></h1>
 		<hr>
 		<div class="row">
-			<div class="card col p-4 m-4 bg-primary text-white border border-dark">
+			<div class="card col p-4 m-4 bg-primary text-white">
 				<div class="ui statistic">
 					<div class="value font-weight-light" id="TotalConfirmed" style="font-size: 40px;">
 					  
@@ -74,7 +68,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="card col p-4 m-4 p-3 mb-2 bg-danger text-white border border-dark">
+			<div class="card col p-4 m-4 p-3 mb-2 bg-danger text-white">
 				<div class="ui statistic">
 					<div class="value font-weight-light" id="TotalDeaths" style="font-size: 40px;">
 					  
@@ -84,7 +78,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="card col p-4 m-4 bg-success text-white border border-dark">
+			<div class="card col p-4 m-4 bg-success text-white">
 				<div class="ui statistic">
 					<div class="value font-weight-light" id="TotalRecovered" style="font-size: 40px;">
 					  
@@ -97,7 +91,6 @@
 			
 		</div>
 		<hr>
-		<div style="font-size:30px" class="blinking"><a href="country.html">Click here for country wise data</a></div>
 	</div>
 
 	<!--Symptoms of covid19-->
