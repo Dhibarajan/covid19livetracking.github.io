@@ -2,12 +2,11 @@
 <html>
 <head>
 	<title>COVID Tracker</title>
-
+	<link rel="icon" href="img/tag.png" type="image/icon type">
 	<link rel="shortcut icon" href="corona.jpeg">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
-	<script type="text/javascript" src="indiatrack.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -18,24 +17,19 @@
 			height: 40%;
 		}
 		.navbar{
-			font-size: 20px;
+			font-size: 25px;
 		}
-
-		.blinking{
-    		animation:blinkingText 1.2s infinite;
-		}
-		@keyframes blinkingText{
-			0%{     color:blue;    }
-			49%{    color: blue; }
-			60%{    color: transparent; }
-			99%{    color:transparent;  }
-			100%{   color:blue;    }
-		}
-
 	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Most of the peoples are affected by dangeres Covid-19 virus this application Track the current impact of the coronavirus pandemic and its spread throughout the world.">
+	<meta name="author" content="Dhibarajan.RR">
+	<meta name="keywords" content="COVID-19,Corona virus,CoV,Corona,SARS,MERS,corona pathology,corona update,COVID-19 update,corona virus epidemiology,COVID-19 diagnosis,novel corona virus,SARS-COV2,corona virus pathology,corona virus 2019">
+	<meta name="google-site-verification" content="google-site-verification: google13004a0c7964d3ea.html">
 	<script data-ad-client="ca-pub-4133274753218471" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
-<body oncontextmenu="return false;">
+<body>
+	<!---<body oncontextmenu="return false;">block the inspect element-->
 	<!--nav bar start-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<a class="navbar-brand" href="#"><b>Covid-19</b></a>
@@ -65,7 +59,7 @@
 		<h1><u>Corona Live Tracking Globally</u></h1>
 		<hr>
 		<div class="row">
-			<div class="card col p-4 m-4 bg-primary text-white border border-dark">
+			<div class="card col-md p-4 m-4 bg-primary text-white">
 				<div class="ui statistic">
 					<div class="value font-weight-light" id="TotalConfirmed" style="font-size: 40px;">
 					  
@@ -75,7 +69,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="card col p-4 m-4 p-3 mb-2 bg-danger text-white border border-dark">
+			<div class="card col-md p-4 m-4  bg-danger text-white">
 				<div class="ui statistic">
 					<div class="value font-weight-light" id="TotalDeaths" style="font-size: 40px;">
 					  
@@ -85,7 +79,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="card col p-4 m-4 bg-success text-white border border-dark">
+			<div class="card col-md p-4 m-4 bg-success text-white">
 				<div class="ui statistic">
 					<div class="value font-weight-light" id="TotalRecovered" style="font-size: 40px;">
 					  
@@ -98,45 +92,10 @@
 			
 		</div>
 		<hr>
-		<!--india data of corona virus Start-->
-	<div class="jumbotron bg white text-center">
-		<h1><u>Corona Live Tracking Globally</u></h1>
-		<hr>
-		<div class="row">
-			<div class="card col p-4 m-4 bg-primary text-white border border-dark">
-				<div class="ui statistic">
-					<div class="value font-weight-light" id="TotalConfirmedindia" style="font-size: 40px;">
-					  
-					</div>
-					<div class="label">
-						Total Confirmed
-					</div>
-				  </div>
-			</div>
-			<div class="card col p-4 m-4 p-3 mb-2 bg-danger text-white border border-dark">
-				<div class="ui statistic">
-					<div class="value font-weight-light" id="TotalDeathsindia" style="font-size: 40px;">
-					  
-					</div>
-					<div class="label">
-						Total Deaths
-					</div>
-				  </div>
-			</div>
-			<div class="card col p-4 m-4 bg-success text-white border border-dark">
-				<div class="ui statistic">
-					<div class="value font-weight-light" id="TotalRecoveredindia" style="font-size: 40px;">
-					  
-					</div>
-					<div class="label">
-						Total Recovered
-					</div>
-				  </div>
-			</div>
-			
+		<div style="font-size: 30px;">
+			<a href="country.html">Click here for Country Wise Data</a>
 		</div>
 		<hr>
-		<div style="font-size:30px"><a href="country.html">Click here for country wise data</a></div>
 	</div>
 
 	<!--Symptoms of covid19-->
@@ -152,22 +111,22 @@
 		<h1 class="text-center"><u>Prevention from Covid-19</u></h1><br>
 		<h3 class="text-center">Basic protective measures against the new coronavirus</h3>
 		<div class='row'>
-			<div class="card col p-4 m-4" style="width: 18rem;">
-				<img src="img/1.png" class="card-img-top" alt="...">
+			<div class="card col-md p-4 m-4">
+				<img src="img/1.png" class="img-responsive" alt="...">
 				<div class="card-body">
 				  <h6 class="card-text">Wash your hands frequently</h6>
 				  <p class="card-text">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.</p>
 				</div>
 			  </div>
-			  <div class="card col p-4 m-4" style="width: 18rem;">
-				<img src="img/2.png" class="card-img-top" alt="...">
+			  <div class="card col-md p-4 m-4">
+				<img src="img/2.png" class="img-responsive" alt="...">
 				<div class="card-body">
 				  <h6 class="card-text">Maintain social distancing</h6>
 				  <p class="card-text">Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.</p>
 				</div>
 			  </div>
-			  <div class="card col p-4 m-4" style="width: 18rem;">
-				<img src="img/3.jpg" class="card-img-top" alt="...">
+			  <div class="card col-md p-4 m-4">
+				<img src="img/3.jpg" class="img-responsive" alt="...">
 				<div class="card-body">
 				  <h6 class="card-text">Avoid touching eyes, nose and mouth</h6>
 				  <p class="card-text">Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.</p>
@@ -176,22 +135,22 @@
 		</div>
 		
 		<div class='row'>
-			<div class="card col p-4 m-4" style="width: 18rem;">
-				<img src="img/4.jpg" class="card-img-top" alt="...">
+			<div class="card col-md p-4 m-4">
+				<img src="img/4.jpg" class="img-responsive" alt="...">
 				<div class="card-body">
 				  <h6 class="card-text">Practice respiratory hygiene</h6>
 				  <p class="card-text">Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.</p>
 				</div>
 			  </div>
-			  <div class="card col p-4 m-4" style="width: 18rem;">
-				<img src="img/5.jpg" class="card-img-top" alt="...">
+			  <div class="card col-md p-4 m-4">
+				<img src="img/5.jpg" class="img-responsive" alt="...">
 				<div class="card-body">
 					<h6 class="card-text">If you have fever, cough and difficulty breathing, seek medical care early</h6>
 				  <p class="card-text">Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.</p>
 				</div>
 			  </div>
-			  <div class="card col p-4 m-4" style="width: 18rem;">
-				<img src="img/6.jpg" class="card-img-top" alt="...">
+			  <div class="card col-md p-4 m-4">
+				<img src="img/6.jpg" class="img-responsive" alt="...">
 				<div class="card-body">
 					<h6 class="card-text">Stay informed and follow advice given by your healthcare provider</h6>
 				  <p class="card-text">Stay informed on the latest developments about COVID-19. Follow advice given by your healthcare provider, your national and local public health authority or your employer on how to protect yourself and others from COVID-19.</p>
@@ -205,21 +164,5 @@
 	<footer class="page-footer ">
 		<div class="footer-copyright text-center py-3">Created by Dhibarajan.R.R(UNOM) || information provided by <a href="https://api.covid19api.com/">api.covid19api.com</a></div>
 	</footer>
-<script type="text/javascript">
-	document.onkeydown = function(e) {
-	if(event.keyCode == 123) {
-	return false;
-	}
-	if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-	return false;
-	}
-	if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-	return false;
-	}
-	if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-	return false;
-	}
-	}
-</script>
 </body>
 </html>
